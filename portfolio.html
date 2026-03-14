@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | GreenScape Orlando - Landscaping & Lawn Care Services</title>
+    <meta name="description" content="View our portfolio of Orlando landscaping projects. See our backyard transformations, lawn care Orlando services, elegant patios, and custom landscape design Orlando.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        green: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .portfolio-card:hover .portfolio-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm border-b border-gray-100" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/index.html" class="flex items-center gap-2 group">
+                    <svg class="h-8 w-8 text-green-600 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    <span class="font-bold text-2xl text-gray-900 tracking-tight">GreenScape <span class="text-green-600">Orlando</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="/index.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Home</a>
+                    <a href="/portfolio.html" class="text-green-600 font-medium">Portfolio</a>
+                    <a href="/contact.html" class="bg-green-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-700 transition-colors shadow-lg shadow-green-600/30">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8">
+            <span class="text-green-600 font-bold tracking-wider uppercase text-sm mb-4 block">Our Work</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Orlando Landscaping Portfolio</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Explore our recent landscape transformations. From lush lawn installations to elegant hardscaping, see how we enhance outdoor living spaces across Orlando.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <main class="flex-grow py-16 px-4">
+        <div class="max-w-7xl mx-auto space-y-20">
+
+            <!-- Backyard Landscaping -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">Backyard Landscaping</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/portfolio-1.jpg" alt="Professional backyard landscaping design with elegant walkway" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Complete Backyard Makeover</h3>
+                            <p class="text-gray-600 leading-relaxed">A full overhaul of an outdated backyard into a modern, relaxing Florida oasis featuring native plants and fresh mulch beds.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/portfolio-2.jpg" alt="Modern landscaped patio backyard and luxury outdoor living space" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Resort-Style Living Space</h3>
+                            <p class="text-gray-600 leading-relaxed">Strategic planting and landscape lighting designed to create a private, tranquil environment right at home.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lawn Installations -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">Lawn Installations</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/irrigation.jpg" alt="Garden landscape installation and premium irrigation system" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Premium Sod Installation</h3>
+                            <p class="text-gray-600 leading-relaxed">Installation of high-quality, shade-tolerant sod perfectly suited for Orlando's variable climate conditions, complete with soil grading.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/lawn-care.jpg" alt="Residential lawn care service and manicured green lawn" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Lawn Rejuvenation</h3>
+                            <p class="text-gray-600 leading-relaxed">Turning a patchy, dry yard into a pristine, golf-course quality lawn through aeration, overseeding, and proper irrigation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patio and Hardscape -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">Patio & Hardscape Projects</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/hardscaping.jpg" alt="Modern landscaped patio backyard with custom stone installation" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Custom Stone Patio</h3>
+                            <p class="text-gray-600 leading-relaxed">A beautifully laid flagstone patio providing an elegant, durable foundation for outdoor dining and entertaining.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/portfolio-3.jpg" alt="Garden landscape installation with elegant paver walkway" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Paver Walkways & Retaining Walls</h3>
+                            <p class="text-gray-600 leading-relaxed">Structured hardscaping designed to prevent erosion while adding architectural beauty and functional pathways across the property.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Garden Design -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900">Garden Design</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/landscape-design.jpg" alt="Professional backyard landscaping design with tropical garden plants" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Tropical Garden Styling</h3>
+                            <p class="text-gray-600 leading-relaxed">Vibrant, texture-rich garden beds utilizing drought-tolerant tropical plants that thrive in the Florida heat with minimal maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                        <div class="h-72 overflow-hidden relative">
+                            <img src="/images/landscaping/portfolio-4.jpg" alt="Garden landscape installation featuring floral garden bed design" class="w-full h-full object-cover transition-transform duration-700 portfolio-img">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Seasonal Floral Borders</h3>
+                            <p class="text-gray-600 leading-relaxed">Carefully curated seasonal flowers designed to provide year-round color and attract local pollinators to the property.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-auto border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="flex items-center gap-2">
+                <svg class="h-6 w-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                <span class="font-bold text-xl text-white tracking-tight">GreenScape <span class="text-green-500">Orlando</span></span>
+            </div>
+            <div class="flex flex-wrap justify-md-end gap-6 text-sm">
+                <a href="/index.html" class="hover:text-green-400 transition-colors">Home</a>
+                <a href="/portfolio.html" class="hover:text-green-400 transition-colors">Portfolio</a>
+                <a href="/privacy.html" class="hover:text-green-400 transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-sm text-gray-500 border-t border-gray-800 pt-8">
+            &copy; 2026 GreenScape Orlando. All rights reserved. Landscaping services in Orlando, Florida.
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
